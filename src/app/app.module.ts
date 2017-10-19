@@ -1,4 +1,4 @@
-import { DropdownDirective } from './shared/dropdown.directive';
+import { SharedModule } from './shared/shared.module';
 import { RecipesModule } from './recipes/recipes.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -24,7 +24,6 @@ import { AuthGuard } from './auth/auth-guard.service';
     HeaderComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    DropdownDirective,
     SignupComponent,
     SigninComponent
   ],
@@ -33,7 +32,8 @@ import { AuthGuard } from './auth/auth-guard.service';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    RecipesModule
+    RecipesModule,
+    SharedModule
   ],
   providers: [ShoppingListService, RecipeService, DataStorageService, AuthService, AuthGuard],
   bootstrap: [AppComponent]

@@ -7,16 +7,16 @@ import * as firebase from 'firebase';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  
+
   loadedFeature = 'recipe';
 
   ngOnInit() {
     firebase.initializeApp({
-      apiKey: "AIzaSyCL9lfsANRwwzh4XUlf0JnAaOVI9VnNGD4",
-      authDomain: "ng-recipe-book-d6079.firebaseapp.com"
+      apiKey: 'AIzaSyCL9lfsANRwwzh4XUlf0JnAaOVI9VnNGD4',
+      authDomain: 'ng-recipe-book-d6079.firebaseapp.com'
     });
   }
-  
+
   onNavigate(feature: string) {
     this.loadedFeature = feature;
   }
